@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<!-- Select language of page -->
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Controls scaling and dimensions of page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- First method of adding a favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- Second method of adding a favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png" sizes="308x308">
+    <!-- Shows the favicon when adding website as shortcut to the desktop/homescreen -->
+    <link rel="apple-touch-icon" sizes="308x308" href="./assets/favicon.png">
+
+    <!-- The title that will be shown on the browser tab -->
+    <title>Pizzeria Santos</title>
+
+    <!-- Links the css file(s) -->
+    <link rel="stylesheet" href="./css/styleKontakt.css">
+    <link rel="stylesheet" href="./css/overlay.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+</head>
+
+<body>
+    <div class="contentDiv">
+        <!-- The logo imports here -->
+        <div class="header">
+            
+            <a href="index.html"><img id="logo" src="./assets/logo.svg" alt=""></a>
+            <div class="navbar">
+                <a href="index.html#menuText">MENY</a>
+                <a href="kontakt.html">HITTA OSS</a>
+            </div>
+        </div>
+
+        <!-- The title of the page -->
+        <div class="titleContainer">
+            <h1 class="title" id="titleTextTest">PIZZERIA SANTOS</h1>
+        </div>
+
+        <!-- Header for the information-->
+        <h2 id="welcomeText">HITTA HIT TILL OSS!</h2>
+
+        <div class="contactDiv">
+            <!-- Imports the interactive google maps into the page-->
+            <div class="map">
+                <iframe id="googleMaps"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1503.2641437651714!2d20.2325272!3d67.8659334!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x45d0ba6368d7c9a3%3A0xe3887ef038c559b0!2sFj%C3%A4llgatan%2032%2C%20981%2039%20Kiruna!5e0!3m2!1ssv!2sse!4v1599723671334!5m2!1ssv!2sse"></iframe>
+            </div>
+
+            <!-- Creates a list for contact info-->
+            <div id="infoDiv">
+                <div>
+                    <h2>Adress</h2>
+                    <a class="infoA" id="address">Fjällgatan 32H</a>
+                    <a class="infoA" id="zipCode">981 39 KIRUNA</a>
+                    <h2>Email</h2>
+                    <a class="infoA" id="email" href="mailto:info@fantastic4group.gitlab.io">info@f4group.gitlab.io</a>
+                    <h2>Telefonnummer</h2>
+                    <a class="infoA" id="phoneNumber" href="tel:0630-555-555">0630-555-555</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

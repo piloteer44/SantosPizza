@@ -1,0 +1,223 @@
+{
+  "id": "6fbd4d58-6bd1-4961-a491-4d44e4cc1c71",
+  "version": "2.0",
+  "name": "Fantastic 4",
+  "url": "https://fantastic4group.gitlab.io/pizza-website/",
+  "tests": [{
+    "id": "e84e6be3-fa4b-42f4-815a-1dbf291873ab",
+    "name": "Pizzeria name check",
+    "commands": [{
+      "id": "5b279dcd-3c5e-4c70-a56e-fc718fbe9c00",
+      "comment": "",
+      "command": "open",
+      "target": "https://fantastic4group.gitlab.io/pizza-website/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de17186d-efec-4704-b96f-e32d1e4bc7e8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//h1[contains(.,'Pizzeria Santos')]",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Pizzeria Santos')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5266c99d-071e-47ae-bd19-339b11fac150",
+    "name": "Email check",
+    "commands": [{
+      "id": "1d2ca209-8f5c-42e1-bf61-a73986af3910",
+      "comment": "",
+      "command": "open",
+      "target": "https://fantastic4group.gitlab.io/pizza-website/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22d57d73-2f86-40ea-ad96-bd51bd504acc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Email: info@fantastic4group.gitlab.io')]",
+      "targets": [
+        ["css=li:nth-child(2)", "css:finder"],
+        ["xpath=//li[2]", "xpath:position"],
+        ["xpath=//li[contains(.,'Email: info@fantastic4group.gitlab.io')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e294954b-bb9e-4e96-893a-2243ef460988",
+    "name": "Phone number check",
+    "commands": [{
+      "id": "9a029ac9-5b8a-4500-b6f9-d30bddb8c574",
+      "comment": "",
+      "command": "open",
+      "target": "https://fantastic4group.gitlab.io/pizza-website/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "37dd8f98-f37c-49dd-a04f-c61bf9b97437",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[contains(.,'Telefon nummer: 0630-555-555')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "62ff1b50-04aa-4c4f-a924-0b04a25aa2a6",
+    "name": "Address check",
+    "commands": [{
+      "id": "a7b2e28b-65c0-4287-991e-ba4eea10beb3",
+      "comment": "",
+      "command": "open",
+      "target": "https://fantastic4group.gitlab.io/pizza-website/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1d0ed7c4-ecb5-4408-9fe6-7f52f1a5c677",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//a[contains(.,'Address: Fjällgatan 32H 981 39 KIRUNA')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "6b8d32c4-263d-44c9-b3ed-ec2a11ca8b79",
+    "name": "Opening hours check",
+    "commands": [{
+      "id": "b4078dcf-2817-4443-bc3a-06a90efabb74",
+      "comment": "",
+      "command": "open",
+      "target": "https://fantastic4group.gitlab.io/pizza-website/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "008776d2-553d-4442-8d53-cf63793596ff",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[contains(.,'Öppettider:')]",
+      "targets": [
+        ["css=li:nth-child(4)", "css:finder"],
+        ["xpath=//li[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8accc96c-9c1c-4cd6-85b9-85b70b6bef83",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[contains(.,'Mån-Tors : 10-22')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e7468c2-553d-4979-b17c-1360554c0cff",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[contains(.,'Fredagar 10-23')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "44cab222-0f57-4dec-9610-f68050f8e0e3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[contains(.,'Lördagar 12-23')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "89b3b911-ed03-41c0-b9af-b4f144f2e4f5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//li[contains(.,'Söndagar 12-20')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d2959497-b42a-4a54-b597-f6d1eb22cd20",
+    "name": "Menu check",
+    "commands": [{
+      "id": "eb780fb5-5839-490f-acd1-b0e36a0b71ee",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:5500/public/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1ef92493-a8f7-439c-89c5-7b35108dd1a0",
+      "comment": "Margarita",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Margarita, ost')]",
+      "targets": [
+        ["css=.ContentDiv > ul > li:nth-child(1) > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/ul/li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Margarita, ost')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e2a5d6a-2334-4873-8cfd-2e1d6e038e2a",
+      "comment": "Price Margarita",
+      "command": "click",
+      "target": "xpath=//div[3]/ul/li/span[2]",
+      "targets": [
+        ["css=.ContentDiv > ul > li:nth-child(1) > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/ul/li/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'80kr')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "583dad7a-91b5-42ca-9361-7dab17a99137",
+      "comment": "Calzone",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Calzone inbakad, skinka')]",
+      "targets": [
+        ["css=.ContentDiv > ul > li:nth-child(1) > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/ul/li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Margarita, ost')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "dfcfbaf0-9f46-4902-a8ed-187d82f3a71a",
+      "comment": "Price 2",
+      "command": "click",
+      "target": "xpath=//div[3]/ul/li[2]/span[2]",
+      "targets": [
+        ["css=.ContentDiv > ul > li:nth-child(1) > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/ul/li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Margarita, ost')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "65f052d7-1281-435a-b83a-eec86e20b575",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//span[contains(.,'Hawaii, skinka, ananas')]",
+      "targets": [
+        ["css=.ContentDiv > ul > li:nth-child(1) > span:nth-child(1)", "css:finder"],
+        ["xpath=//div[3]/ul/li/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Margarita, ost')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "024e3f23-78f8-49e2-b338-688e75490828",
+      "comment": "Price 3",
+      "command": "click",
+      "target": "xpath=//div[3]/ul/li[4]/span[2]",
+      "targets": [
+        ["css=.ContentDiv > ul > li:nth-child(4) > span:nth-child(2)", "css:finder"],
+        ["xpath=//div[3]/ul/li[4]/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'90kr')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "61c64175-5f61-4c45-9bf7-7e1ca7213848",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e84e6be3-fa4b-42f4-815a-1dbf291873ab"]
+  }],
+  "urls": ["https://fantastic4group.gitlab.io/pizza-website/"],
+  "plugins": []
+}

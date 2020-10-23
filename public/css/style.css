@@ -1,0 +1,245 @@
+/* Imports a local font */
+@font-face {
+    font-family: "NATS";
+    src: url("../assets/fonts/NATS-Regular.ttf") format('truetype');
+}
+
+/* All the content, have black background, same font, no margin and white color of text*/
+body {
+    margin: 0;
+    position: relative;
+    min-height: 100vh;
+    /* Text styling and background color */
+    text-align: center;
+    font-family: "NATS";
+    background-color: black;
+    color: white;
+    /* Used to center page content */
+}
+
+/* Aligns content in the middle  */
+.contentDiv {
+    margin: auto;
+    display: inline-block;
+    /* content width is not higher then 1920 pixels*/
+    max-width: 1920px;
+    position: relative;
+}
+
+.header {
+    max-width: 1920px;
+    margin: auto;
+    height: 75px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    left: 0;
+    right: 0;
+    background-color: rgba(20, 20, 20, 0.85);
+    z-index: 50;
+}
+
+.header img {
+    float: left;
+    height: 75px;
+    padding: 12.5px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+#hours {
+    width: 100%;
+    display: flex;
+    /* Support for old Safari & Chrome */
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.openClass {
+    width: 400px;
+    margin: 15px 10px;
+}
+
+@media screen and (max-width: 860px) {
+    .openClass {
+        width: 100%;
+        margin: 15px 10px;
+    }
+}
+
+.openClass li {
+    max-width: 100%;
+}
+
+/* Only last element will get red color*/
+#closedDays li span:nth-last-child(1) {
+    color: red;
+}
+
+h2 {
+    color: rgb(204, 180, 100);
+    user-select: none;
+}
+
+#orderButton {
+    border: 2px solid rgb(204, 180, 100);
+    max-width: max-content;
+    margin: auto;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+ul {
+    /*Makes the margin and padding part of photo width*/
+    margin: 15px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+li {
+    /* Remove all decoration from list */
+    list-style: none;
+    padding: 10px;
+}
+
+ul li {
+    margin: auto;
+    max-width: 720px;
+    text-align: left;
+    /* Aligns weekdays and time to different sides */
+    display: flex;
+    /* Support for old Safari & Chrome */
+    display: -webkit-flex;
+    justify-content: space-between;
+}
+
+/* Gives every 2nd list item a dark grey background */
+ul li:nth-child(even) {
+    background-color: rgb(20, 20, 20);
+}
+
+/* The image behind the title */
+.titleImage {
+    position: relative;
+    background-image: url("../assets/bild4.jpg");
+    /* Gives the image a parallax effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    max-height: calc(85vh - 75px);
+}
+
+.titleContainer{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    /* Support for old Safari & Chrome */
+    display: -webkit-flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+/* Title of page stays in the middle */
+.title {
+    display: inline-block;
+    font-size: 50px;
+    margin: 0;
+    line-height: 90px;
+    /* To make the border fit around the text in Firefox */
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+    height: fit-content;
+    height: -moz-fit-content;
+    color: rgb(204, 180, 100);
+    border: 2px solid rgb(204, 180, 100);
+    padding: 0px 10px;
+    box-sizing: border-box;
+    user-select: none;
+    z-index: 2;
+}
+
+.titleInformation{
+    text-align: center;
+    text-decoration: none;
+    font-size: 2em;
+    color: rgb(204, 180, 100);
+    white-space: nowrap;
+}
+
+.titleInformation:nth-of-type(1){
+    margin-left: 6px;
+}
+
+/* Hides the '|' when the width reaches the point where the text wraps */
+@media screen and (max-width: 344px) {
+    .titleInformation:nth-of-type(2){
+        visibility: hidden;
+    }
+}
+
+/* Align in mobile resolutions */
+.pictures {
+    display: flex;
+    /* Support for old Safari & Chrome */
+    display: -webkit-flex;
+    justify-content: space-evenly;
+    /* Fix for images stretching in Safari */
+    align-items: flex-start;
+    flex-wrap: wrap-reverse;
+}
+
+/* Bottom photos size */
+.pizzaPictures {
+    width: 780px;
+    max-width: 100%;
+    opacity: 0.8;
+    padding: 20px;
+    /* Makes the margin and padding part of photo width */
+    box-sizing: border-box;
+}
+
+#infoDiv {
+    background-color: rgb(20, 20, 20);
+    box-sizing: border-box;
+    display: flex;
+    /* Support for old Safari & Chrome */
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.footerContainers{
+    margin: 0 10px;
+}
+
+#addressDiv{
+    display: flex;
+    /* Support for old Safari & Chrome */
+    display: -webkit-flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#addressDiv a{
+    line-height: 20px;
+}
+
+.infoLink {
+    display: block;
+    color: white;
+    margin: 0 auto;
+    /* Removes decorations */
+    text-decoration: none;
+    width: max-content;
+}
