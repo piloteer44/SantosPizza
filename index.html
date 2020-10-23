@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!-- Select language of page -->
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Controls scaling and dimensions of page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- First method of adding a favicon -->
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <!-- Second method of adding a favicon -->
+    <link rel="icon" type="image/png" href="./assets/favicon.png" sizes="308x308">
+    <!-- Shows the favicon when adding website as shortcut to the desktop/homescreen -->
+    <link rel="apple-touch-icon" sizes="308x308" href="./assets/favicon.png">
+
+    <!-- The title that will be shown on the browser tab -->
+    <title>Pizzeria Santos</title>
+
+    <!-- Links the css file(s) -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/overlay.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+
+    <!-- Imports the js file(s) -->
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+    <div class="contentDiv" id="contentDiv">
+        <!-- The overlay. It needs inline css values to be able to change them easily with JavaScript -->
+        <div id="orderOverlay" style="display: none; opacity: 0;" data-state="hidden">
+            <div id="orderContent">
+                <img id="orderCloseButton" src="assets/close.svg" alt="close">
+                <h2>Se om vi levererar till ditt postnummer</h2>
+                <!-- Groups order content for flex positioning -->
+                <div id="orderWrapper">
+                    <input id="orderInput" type="text" placeholder="Postnummer" autocomplete="off" value=""
+                        maxlength="6">
+                    <div id="orderConfirmButton"><img src="./assets/magnify.svg" alt="Search"></div>
+                </div>
+                <Span id="orderStatus">Skriv in ditt postnummer</Span>
+            </div>
+        </div>
+        <!-- The logo imports here -->
+        <div class="header">
+            <a href="index.html"><img id="logo" src="./assets/logo.svg" alt=""></a>
+            <div class="navbar">
+                <a href="index.html#menuText">MENY</a>
+                <a href="kontakt.html">HITTA OSS</a>
+            </div>
+        </div>
+        <!-- The title of the page -->
+        <div class="titleImage" id="titleImageTest">
+            <div class="titleContainer">
+                <h1 class="title" id="titleTextTest">PIZZERIA SANTOS</h1>
+                <div>
+                    <a class="titleInformation" id="titlePhoneNumberTest" href="tel:0630-555-555">0630-555-555 </a>
+                    <a class="titleInformation" href="">| </a>
+                    <a class="titleInformation" id="titleAddressTest" href="https://goo.gl/maps/2aqFdNDscvCgKKQR9"
+                        target="_blank">Fjällgatan 32H</a>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Creates the separated lists for the opening hours and the dates closed -->
+        <div id="hours">
+            <ul id="openingHours" class="openClass">
+                <li><span>Mån-Tors</span> <span>10-22</span></li>
+                <li><span>Fredagar</span> <span>10-23</span></li>
+                <li><span>Lördagar</span> <span>12-23</span></li>
+                <li><span>Söndagar</span> <span>12-20</span></li>
+            </ul>
+            <ul id="closedDays" class="openClass">
+                <li><span class="closedDate">6 januari</span> <span>Stängt</span></li>
+                <li><span class="closedDate">1 maj</span> <span>Stängt</span></li>
+                <li><span class="closedDate">24 december</span> <span>Stängt</span></li>
+                <li><span class="closedDate">25 december</span> <span>Stängt</span></li>
+                <li><span class="closedDate">26 december</span> <span>Stängt</span></li>
+            </ul>
+        </div>
+
+        <h2 id="menuText">MENY</h2>
+        <!-- The list of menu items -->
+        <ul id="menu">
+            <li><span>Margarita, <i>ost</i></span> <span>80 kr</span></li>
+            <li><span>Calzone inbakad, <i>skinka</i></span> <span>85 kr</span></li>
+            <li><span>Vesuvio, <i>skinka</i></span> <span>85 kr</span></li>
+            <li><span>Hawaii, <i>skinka, ananas</i></span> <span>90 kr</span></li>
+            <li><span>Capricciosa, <i>skinka, champinjoner</i></span> <span>90 kr</span></li>
+            <li><span>Pompei, <i>bacon, rödlök, ägg, curry</i></span> <span>90 kr</span></li>
+            <li><span>La Casa, <i>champinjoner, räkor, skinka</i></span> <span>95 kr</span></li>
+            <li><span>Extra topping</span> <span>5 kr</span></li>
+        </ul>
+
+        <h2 id="orderButton"><a>UTKÖRNING</a></h2>
+
+        <!-- Photos in the footer-->
+        <div class="pictures" id="imagesTest">
+            <img class="pizzaPictures" src="assets/bild1.jpg" alt="Picture of pizza">
+            <img class="pizzaPictures" src="assets/bild2.jpg" alt="Picture of pizza">
+            <img class="pizzaPictures" src="assets/bild3.jpg" alt="Picture of pizza">
+        </div>
+
+        <!-- Creates a list for contact info-->
+        <div id="infoDiv">
+            <div id="addressDiv" class="footerContainers">
+                <a class="infoLink" id="footerAddress" href="https://goo.gl/maps/2aqFdNDscvCgKKQR9"
+                    target="_blank">Fjällgatan 32H</a>
+                <a class="infoLink" id="footerZipCode" href="https://goo.gl/maps/2aqFdNDscvCgKKQR9" target="_blank">981
+                    39 KIRUNA</a>
+            </div>
+            <div id="contactInfoDiv" class="footerContainers">
+                <a class="infoLink" id="footerEmail"
+                    href="mailto:info@fantastic4group.gitlab.io">info@f4group.gitlab.io</a>
+                <a class="infoLink" id="footerPhoneNumber" href="tel:0630-555-555">0630-555-555</a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+/* This css file is for styling the Navbar */
+
+
+/* Positioning items in Navbar */
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    height: 100%;
+    width: max-content;
+}
+
+/* Navbar */
+.navbar a {
+    color: rgb(204, 180, 100);
+    text-decoration: none;
+    margin: 5px;
+    font-size: 20px;
+    user-select: none;
+}
+
